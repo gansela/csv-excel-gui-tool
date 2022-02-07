@@ -63,7 +63,7 @@ class csvxlsx_convertor:
                     sheet_btn = Button(self.options_frame, text=btn, command=lambda idx=idx: self.choose_dest(xl.sheet_names[idx]), bg="#000000", fg="#ebebeb")
                     sheet_btn.pack(side="right", padx=10)
             else:
-                self.choose_dest(self, "")
+                self.choose_dest( "")
         except Exception as e:
             print(traceback.format_exc())
 
